@@ -1,0 +1,159 @@
+/* Configuración general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fondo ligero para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra atractiva */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Título */
+h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Pregunta y Opciones */
+.question-container {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.option:hover {
+    background-color: #27ae60;
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Timer */
+.timer {
+    font-size: 1.2em;
+    color: #e74c3c; /* Color rojo para el tiempo */
+    margin: 15px 0;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Botón de Siguiente Pregunta */
+button {
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+/* Estilos para respuesta correcta */
+.correct {
+    background-color: #3a27b8 !important; /* Verde */
+    color: #fff;
+}
+
+/* Estilos para respuesta incorrecta */
+.incorrect {
+    background-color: #e74c3c !important; /* Rojo */
+    color: #fff;
+}
+
+#question {
+    font-size: 25px;
+margin-top: 0;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #f1f1f1; /* Color de texto claro */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrar texto */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+/* Enlaces en el footer */
+.footer a {
+    color: #ffa500; /* Color de enlace personalizado */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Línea superior decorativa */
+.footer::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ffa500; /* Color de la línea decorativa */
+    margin: 0 auto 15px auto; /* Centrado con espacio inferior */
+}
+

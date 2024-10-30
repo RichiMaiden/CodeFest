@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Fest 1.0</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--<h1>Competencia de Informática</h1>-->
+        <img src="image/codefest.jpg" alt="Code Fest 1.0" style="max-width: 80%; height: auto;">
+        <div class="question-container">
+            <p id="question">¿Cuál es la capital de la informática?</p>
+            <div class="options">
+                <button class="option" onclick="checkAnswer(this)">Opción 1</button>
+                <button class="option" onclick="checkAnswer(this)">Opción 2</button>
+                <button class="option" onclick="checkAnswer(this)">Opción 3</button>
+            </div>
+        </div>
+        <div class="timer">
+            <p>Tiempo restante: <span id="time">1:00</span></p>
+        </div>
+        <div class="controls">
+            <button onclick="startTimer()">Iniciar Tiempo</button>
+            <button onclick="pauseTimer()">Pausar Tiempo</button>
+            <button onclick="resumeTimer()">Reanudar Tiempo</button>
+        </div>
+        <button onclick="nextQuestion()">Siguiente Pregunta</button>
+        <button onclick="showAnswer()">Mostrar Respuesta</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
